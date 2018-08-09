@@ -1,0 +1,59 @@
+{
+  "name": "kyvue-template",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "dev": "vue-cli-service serve --port 9000",
+    "build-test": "vue-cli-service build --mode test",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint",
+    "start": "node @kyserver/www",
+    "boot": "NODE_ENV=dev supervisor node @kyserver/www"
+  },
+  "dependencies": {
+    "assert": "^1.4.1",
+    "axios": "^0.18.0",
+    "delegates": "^1.0.0",
+    "koa": "^2.5.0",
+    "koa-bodyparser": "^4.2.0",
+    "koa-router": "^7.4.0",
+    "koa-static": "^4.0.2",
+    "lodash": "^4.17.5",
+    "nunjucks": "^3.1.2",
+    "querystring": "^0.2.0",
+    "vue": "^2.5.17",
+    "vue-router": "^3.0.1"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^3.0.0-rc.11",
+    "@vue/cli-plugin-eslint": "^3.0.0-rc.11",
+    "@vue/cli-service": "^3.0.0-rc.11",
+    "less": "^3.8.0",
+    "less-loader": "^4.1.0",
+    "vue-template-compiler": "^2.5.17"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "eslint:recommended"
+    ],
+    "rules": {},
+    "parserOptions": {
+      "parser": "babel-eslint"
+    }
+  },
+  "postcss": {
+    "plugins": {
+      "autoprefixer": {}
+    }
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 8"
+  ]
+}

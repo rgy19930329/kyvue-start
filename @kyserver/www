@@ -1,0 +1,13 @@
+/**
+ * 项目启动入口
+ */
+
+require('./kylinjs');
+
+const config = require('./app/addons/config');
+
+KY.init({
+  appDir: __dirname
+}).addon(config);
+
+KY.serverStart();
