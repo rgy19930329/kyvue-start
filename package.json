@@ -8,7 +8,7 @@
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
     "start": "node @kyserver/www",
-    "boot": "NODE_ENV=dev supervisor node @kyserver/www"
+    "boot": "cross-env NODE_ENV=dev supervisor node @kyserver/www"
   },
   "dependencies": {
     "assert": "^1.4.1",
@@ -28,6 +28,7 @@
     "@vue/cli-plugin-babel": "^3.0.0-rc.11",
     "@vue/cli-plugin-eslint": "^3.0.0-rc.11",
     "@vue/cli-service": "^3.0.0-rc.11",
+    "cross-env": "^5.2.0",
     "less": "^3.8.0",
     "less-loader": "^4.1.0",
     "vue-template-compiler": "^2.5.17"
