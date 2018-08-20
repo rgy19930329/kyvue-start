@@ -1,12 +1,15 @@
 {
   "apps": [
     {
-      "name": "kyvue-demo",
-      "script": "./www",
+      "name": "kyvue-start",
+      "script": "./@kyserver/www",
       "watch": true,
       "node_args": "--harmony",
       "merge_logs": false,
       "cwd": "./",
+      "env": {
+        "NODE_ENV": "product"
+      },
       "instances": 1,
       "exec_mode": "cluster",
       "error_file": "/dev/null",

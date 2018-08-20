@@ -7,7 +7,7 @@
     "build-test": "vue-cli-service build --mode test",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "start": "node @kyserver/www",
+    "start": "cross-env NODE_ENV=dev node @kyserver/www",
     "boot": "cross-env NODE_ENV=dev supervisor node @kyserver/www"
   },
   "dependencies": {
