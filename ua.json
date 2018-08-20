@@ -1,7 +1,7 @@
 {
   "apps": [
     {
-      "name": "kyvue-start",
+      "name": "{{projectName}}",
       "script": "./@kyserver/www",
       "watch": true,
       "node_args": "--harmony",
